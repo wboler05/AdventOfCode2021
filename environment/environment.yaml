@@ -1,0 +1,16 @@
+name: aoc
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python >= 3.8, < 3.10
+  - pip
+  - pip:
+    - matplotlib
+    - numpy
+    - scipy
+    - sklearn
+    - tqdm
+    - nose
+    - pyyaml
+    
