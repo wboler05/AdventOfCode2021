@@ -18,12 +18,25 @@ conda activate aoc
 
 ## Execution
 
-Code is kept in `./code/day{day_of_month}`.  Each day will have the set of code used to accomplish the task, example input files, and my own assigned inputs.  These tend to be randomized, so they will not work for your own submission.  The general flow will be:
+Code is kept in `./code/python/day{day_of_month}`.  Each day will have the set of code used to accomplish the task, example input files, and my own assigned inputs.  These tend to be randomized, so they will not work for your own submission.  The general flow will be:
 
 ```bash
 python <script>.py <input_file>.txt
 ```
 
+The result will be output to the CLI. 
+
 ## GoLang
 
-At some point, I plan to use this event to learn GoLang.  My plan is to first solve each task using Python, then try to recreate it using Go.  It will be in its own separate `./go/` directory. 
+At some point, I plan to use this event to learn GoLang.  My plan is to first solve each task using Python, then try to recreate it using Go.  The Go code is in its own separate `./code/go/` directory. 
+
+To execute, first make sure you have no issues with Go pathing.  Conda installs its own version.
+
+Next, execute the Go code as follows:
+
+```bash
+cd ./code/go/<day_dir>
+go run <part version>.go <input_file>.txt
+```
+
+The result will be output to the CLI. 
